@@ -346,7 +346,7 @@
   function find_salesperson_by_id($id=0) {
     global $db;
     $sql = "SELECT * FROM salespeople ";
-    $sql .= "WHERE id='" . $id . "' ";
+    $sql .= "WHERE id='" . db_query($db, $id) . "' ";
     $sql .= "LIMIT 1;";
     $salespeople_result = db_query($db, $sql);
     return $salespeople_result;
