@@ -27,7 +27,6 @@ if(is_post_request() && request_is_same_domain()) {
     $users_result = find_users_by_username($username);
     // No loop, only one result
     $user = db_fetch_assoc($users_result);
-
     // checking for throttle
     $t_time = ceil(throttle_time($user) / 60);
     if($t_time > 0) {
@@ -69,7 +68,7 @@ if(is_post_request() && request_is_same_domain()) {
 
   <?php echo display_errors($errors); ?>
 
-  <form action="login.php" method="post">
+  <form action="login.php" method="post" autocomplete="off">
     <?php echo csrf_token_tag(); ?>
     Username:<br />
     <input type="text" name="username" value="<?php echo h($username); ?>" /><br />

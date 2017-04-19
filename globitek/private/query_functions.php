@@ -14,9 +14,9 @@
   }
 
   // Find country by ID
-  function find_country_by_id($id=0) {
+  function find_country_by_id($id=0, $table="countries") {
     global $db;
-    $sql = "SELECT * FROM countries ";
+    $sql = "SELECT * FROM " . $table . " ";
     $sql .= "WHERE id='" . db_escape($db, $id) . "';";
     $country_result = db_query($db, $sql);
     return $country_result;
@@ -346,7 +346,7 @@
   function find_salesperson_by_id($id=0) {
     global $db;
     $sql = "SELECT * FROM salespeople ";
-    $sql .= "WHERE id='" . db_query($db, $id) . "' ";
+    $sql .= "WHERE id='" . db_escape($db, $id) . "' ";
     $sql .= "LIMIT 1;";
     $salespeople_result = db_query($db, $sql);
     return $salespeople_result;
@@ -483,7 +483,8 @@
   function find_users_by_username($username='') {
     global $db;
     $sql = "SELECT * FROM users ";
-    $sql .= "WHERE username = '" . db_escape($db, $username) . "';";
+    $sql .= "WHERE username = '" . $username . "';";
+    echo $sql;
     $users_result = db_query($db, $sql);
     return $users_result;
   }
