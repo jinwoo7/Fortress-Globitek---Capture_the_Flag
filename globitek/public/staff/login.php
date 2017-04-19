@@ -18,9 +18,9 @@ if(is_post_request() && request_is_same_domain()) {
   if (is_blank($username)) {
     $errors[] = "Username cannot be blank.";
   }
-  if (is_blank($password)) {
-    $errors[] = "Password cannot be blank.";
-  }
+  // if (is_blank($password)) {
+  //   $errors[] = "Password cannot be blank.";
+  // }
 
   // If there were no errors, submit data to database
   if (empty($errors)) {

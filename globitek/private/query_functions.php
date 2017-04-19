@@ -483,7 +483,7 @@
   function find_users_by_username($username='') {
     global $db;
     $sql = "SELECT * FROM users ";
-    $sql .= "WHERE username = '" . $username . "';";
+    $sql .= "WHERE username='" . $username . "';";
     echo $sql;
     $users_result = db_query($db, $sql);
     return $users_result;
