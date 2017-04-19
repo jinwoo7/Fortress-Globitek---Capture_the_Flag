@@ -19,7 +19,8 @@ Time spent: **5** hours spent in total
 	\"find a salesperson\" page. You can access the salesperson that has 
 	id=11, a hidden account, to obtain a first name and a password for
 	one of the account holder.</dd>
-
+</dl>
+<dl>
 	<img src="./sqli.PNG" alt="SQL_Injection_demonstration"/>
 	<dt>Vulnerability #2: SQL Injection (SQLi)</dt>
 	<dd>We now know the first name and the password of an account, but
@@ -27,7 +28,8 @@ Time spent: **5** hours spent in total
 	page has a SQL Injection vulnerability. Thus, instead of figuring out
 	the username, we can write a SQL command that directly queries it.
 	In the username box, input: <em>x' OR first_name='Jinwoo</em>.</dd>
-
+</dl>
+<dl>
 	<img src='./burp.PNG' alt='Field_manipulation_demonstration'/>
 	<dt>Vulnerability #3: Post request field manipulation using Burp</dt>
 	<dd>Once we are logged in, we can go to a show.php page for countries
