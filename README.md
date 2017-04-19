@@ -42,5 +42,5 @@ Time spent: **5** hours spent in total
 
 ### Vulnerabilities
 - Vulnerability #1: Insecure Direct Object Reference (IDOR)
-- Vulnerability #2: SQL 
+- Vulnerability #2: SQL Injection (SQLi)
 - Vulnerability #3: Post request field manipulation using Burp
