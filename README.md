@@ -13,14 +13,14 @@ Time spent: **5** hours spent in total
 - [x] Brief writeup about the vulnerabilities introduced below
 
 <dl>
-	<img src='./IDOR.PNG' alt='IDOR demonstration' />
+	<img src="./IDOR.PNG" alt="IDOR demonstration" />
 	<dt>Vulnerability #1: Insecure Direct Object Reference (IDOR)</dt>
 	<dd>There is a IDOR vulnerability in the show.php for the public 
 	\"find a salesperson\" page. You can access the salesperson that has 
 	id=11, a hidden account, to obtain a first name and a password for
 	one of the account holder.</dd>
 
-	<img src='./sqli.PNG' alt='SQL Injection demonstration' />
+	<img src="./sqli.PNG" alt="SQL_Injection_demonstration"/>
 	<dt>Vulnerability #2: SQL Injection (SQLi)</dt>
 	<dd>We now know the first name and the password of an account, but
 	we don't know the username. Luckily, username input box in the login
@@ -28,7 +28,7 @@ Time spent: **5** hours spent in total
 	the username, we can write a SQL command that directly queries it.
 	In the username box, input: <em>x' OR first_name='Jinwoo</em>.</dd>
 
-	<img src='./burp.PNG' alt='Field manipulation demonstration' />
+	<img src='./burp.PNG' alt='Field_manipulation_demonstration'/>
 	<dt>Vulnerability #3: Post request field manipulation using Burp</dt>
 	<dd>Once we are logged in, we can go to a show.php page for countries
 	where it has some post fields that are vulnerable to be manipulated
