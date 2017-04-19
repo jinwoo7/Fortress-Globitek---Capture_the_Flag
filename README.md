@@ -11,7 +11,7 @@ Time spent: **5** hours spent in total
 - [x] GIF Walkthrough of compromise
 <img src='./ctfDemonstration.gif' title='Video Walkthrough' width='' alt='Video Walkthrough CTF Demonstration' />
 - [x] Brief writeup about the vulnerabilities introduced below
----html
+
 <dl>
 	<img src='./IDOR.PNG' alt='IDOR demonstration' />
 	<dt>Vulnerability #1: Insecure Direct Object Reference (IDOR)</dt>
@@ -37,7 +37,6 @@ Time spent: **5** hours spent in total
 	order to view the secret code, you need to modify the fields to match 
 	the following:<em>id=1&table=secrets&field=secret&submit=Submit</em></dd>
 </dl>
----
 
 ### Vulnerabilities
 - Vulnerability #1: Insecure Direct Object Reference (IDOR)
