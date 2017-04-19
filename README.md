@@ -15,8 +15,8 @@ Time spent: **5** hours spent in total
 <dl>
 	<img src='./IDOR.PNG' alt='IDOR demonstration' />
 	<dt>Vulnerability #1: Insecure Direct Object Reference (IDOR)</dt>
-	<dd>There is a IDOR vulnerability in the show.php for the public's 
-	"find a salesperson" page. You can access the salesperson that has 
+	<dd>There is a IDOR vulnerability in the show.php for the public 
+	\"find a salesperson\" page. You can access the salesperson that has 
 	id=11, a hidden account, to obtain a first name and a password for
 	one of the account holder.</dd>
 
